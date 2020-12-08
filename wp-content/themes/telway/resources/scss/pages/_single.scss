@@ -1,0 +1,126 @@
+.single,
+.news,
+.publications {
+  &__content {
+    margin-top: 30px;
+  }
+
+  &__list-item {
+    padding-bottom: 50px;
+  }
+
+  &__text {
+    background-color: #fff;
+    box-shadow: 0 0 21px rgba(0, 0, 0, 0.13);
+    padding: 44px 46px 43px 36px;
+    color: $textColor;
+  }
+
+  &__item-title {
+    padding-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__item-des {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+
+  &__item-btn {
+    line-height: 39px;
+    min-width: 140px;
+    margin-top: 22px;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+
+
+  }
+}
+
+
+
+.news,
+.publications {
+  &__list-item:nth-child(even) {
+    .news__text,
+    .publications__text {
+      order: 1;
+    }
+  }
+
+  &__image {
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+  }
+}
+
+.single {
+  &__content {
+    margin-bottom: 60px;
+  }
+}
+
+
+
+@media screen and (max-width: $md) {
+  .single,
+  .news,
+  .publications {
+    &__text {
+    order: 1;
+    margin-top: 23px;
+    }
+  }
+
+  .news,
+  .publications {
+  &__image {
+    padding: 0;
+  }
+  }
+}
+
+@media screen and (width: 768px) {
+  .single,
+  .news,
+  .publications {
+    &__image {
+    order: 2;
+    }
+    &__text {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .single,
+  .news,
+  .publications {
+    &__content {
+      margin-top: 70px;
+    }
+    &__text {
+      order: 1;
+      margin: 23px 10px 0;
+      padding-right: 20px;
+    }
+  }
+
+
+  .news,
+  .publications {
+    &__image {
+      padding: 0 10px;
+    }
+    }
+}
+

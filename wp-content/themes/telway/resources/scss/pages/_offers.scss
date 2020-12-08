@@ -1,0 +1,61 @@
+.offers {
+
+  &__row {
+    margin-top: 54px;
+  }
+
+  &__des-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+
+    p {
+      padding-bottom: 22px;
+    }
+
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    padding: 40px 0 100px;
+  }
+
+  &__list {
+    max-width: 393px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.13);
+    padding: 43px;
+    margin-left: 50px;
+  }
+
+  &__list-item {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-bottom: 17px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $lg) {
+  .offers__list {
+      margin-left: 0;
+      padding: 16px;
+  }
+}
+
+@media screen and (max-width: $md) {
+  .offers {
+    &__list {
+    margin: 0 auto 30px;
+    }
+
+    &__image {
+      padding-bottom: 50px;
+    }
+  }
+}

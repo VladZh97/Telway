@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+
+@import "abstracts/variables";
+@import "abstracts/typography";
+@import "abstracts/base";
+@import "abstracts/mixins";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/front-page";
+@import "pages/articles";
+@import "pages/single";
+@import "pages/page";
+@import "pages/about";
+@import "pages/offers";
+@import "pages/works";
+@import "pages/contact";
+@import "pages/single";
+@import "pages/error";
+
+@import "vendors/bootstrap-grid.min.css";
+@import "vendors/reset.css";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

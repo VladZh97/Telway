@@ -1,0 +1,48 @@
+html {
+	overflow-x: hidden;
+}
+
+body {
+	overflow: hidden;
+	font-family: $mainFont;
+	color: $textColor;
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+:focus {
+	outline: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+main {
+	min-height: 90vh;
+}
+
+body.lock,
+html.lock {
+	overflow: hidden;
+}
+html.lock {
+	position: fixed;
+}
+
+article {
+	padding-top: 100px;
+}
+
+a,
+button {
+	outline: none;
+	&:focus {
+		outline: none;
+	}
+}
